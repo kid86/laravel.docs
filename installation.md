@@ -35,21 +35,7 @@ However, if you are not using XAMPP, you will need to make sure your server meet
 
 Laravel utilizes [Composer](https://getcomposer.org) to manage its dependencies. So, before using Laravel, make sure you have Composer installed on your machine.
 
-#### Via Laravel Installer
-
-First, download the Laravel installer using Composer:
-
-    composer global require "laravel/installer"
-
-Make sure to place the `$HOME/.composer/vendor/bin` directory (or the equivalent directory for your OS) in your $PATH so the `laravel` executable can be located by your system.
-
-Once installed, the `laravel new` command will create a fresh Laravel installation in the directory you specify. For instance, `laravel new blog` will create a directory named `blog` containing a fresh Laravel installation with all of Laravel's dependencies already installed:
-
-    laravel new blog
-
-#### Via Composer Create-Project
-
-Alternatively, you may also install Laravel by issuing the Composer `create-project` command in your terminal:
+You may install Laravel by issuing the Composer `create-project` command in your terminal:
 
     composer create-project --prefer-dist laravel/laravel blog
 
@@ -59,7 +45,6 @@ If you have PHP installed locally and you would like to use PHP's built-in devel
 
     php artisan serve
 
-Of course, more robust local development options are available via [Homestead](/docs/{{version}}/homestead) and [Valet](/docs/{{version}}/valet).
 
 <a name="configuration"></a>
 ### Configuration
@@ -72,9 +57,6 @@ After installing Laravel, you should configure your web server's document / web 
 
 All of the configuration files for the Laravel framework are stored in the `config` directory. Each option is documented, so feel free to look through the files and get familiar with the options available to you.
 
-#### Directory Permissions
-
-After installing Laravel, you may need to configure some permissions. Directories within the `storage` and the `bootstrap/cache` directories should be writable by your web server or Laravel will not run. If you are using the [Homestead](/docs/{{version}}/homestead) virtual machine, these permissions should already be set.
 
 #### Application Key
 
