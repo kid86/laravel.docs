@@ -43,6 +43,7 @@ You may install Laravel by issuing the Composer `create-project` command in your
 
 If you have PHP installed locally and you would like to use PHP's built-in development server to serve your application, you may use the `serve` Artisan command. This command will start a development server at `http://localhost:8000`:
 
+    cd blog
     php artisan serve
 
 
