@@ -3,9 +3,6 @@
 - [Installation](#installation)
     - [Server Requirements](#server-requirements)
     - [Installing Laravel](#installing-laravel)
-    - [Configuration](#configuration)
-- [Web Server Configuration](#web-server-configuration)
-    - [Pretty URLs](#pretty-urls)
 
 <a name="installation"></a>
 ## Installation
@@ -45,22 +42,3 @@ If you have PHP installed locally and you would like to use PHP's built-in devel
 
     cd blog
     php artisan serve
-
-
-<a name="configuration"></a>
-### Configuration
-
-#### Configuration Files
-
-All of the configuration files for the Laravel framework are stored in the `config` directory. Each option is documented, so feel free to look through the files and get familiar with the options available to you.
-
-
-#### Application Key
-The next thing you should do after installing Laravel is set your application key to a random string. If you installed Laravel via Composer or the Laravel installer, this key has already been set for you by the `php artisan key:generate` command.
-
-Typically, this string should be 32 characters long. The key can be set in the `.env` environment file. If you have not renamed the `.env.example` file to `.env`, you should do that now. **If the application key is not set, your user sessions and other encrypted data will not be secure!**
-
-#### Database
-[Configuration](database.md#configuration)
-
-<a name="web-server-configuration"></a>
