@@ -13,7 +13,9 @@
 The Laravel framework has a few system requirements. Of course, all of these requirements are satisfied by the
 
 ### XAMPP Web Server
- 
+
+https://bitnami.com/redirect/to/153273/bitnami-wampstack-5.6.31-0-windows-x64-installer.exe
+
 [![XAMPP](http://i.imgur.com/KuCYijn.png)](https://bitnami.com/redirect/to/153273/bitnami-wampstack-5.6.31-0-windows-x64-installer.exe)
 
 so it's highly recommended that you use XAMPP as your local Laravel development environment.
