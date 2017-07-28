@@ -10,23 +10,25 @@
 <a name="installation"></a>
 ## Installation
 
-> {video} Are you a visual learner? Laracasts provides a [free, thorough introduction to Laravel](https://laracasts.com/series/laravel-from-scratch-2017) for newcomers to the framework. It's a great place to start your journey.
-
 <a name="server-requirements"></a>
 ### Server Requirements
 
-The Laravel framework has a few system requirements. Of course, all of these requirements are satisfied by the [Laravel Homestead](/docs/{{version}}/homestead) virtual machine, so it's highly recommended that you use Homestead as your local Laravel development environment.
+The Laravel framework has a few system requirements. Of course, all of these requirements are satisfied by the
 
-However, if you are not using Homestead, you will need to make sure your server meets the following requirements:
+### XAMPP Web Server
+ 
+[![XAMPP](http://i.imgur.com/KuCYijn.png)](https://bitnami.com/redirect/to/153273/bitnami-wampstack-5.6.31-0-windows-x64-installer.exe)
 
-<div class="content-list" markdown="1">
+so it's highly recommended that you use XAMPP as your local Laravel development environment.
+
+However, if you are not using XAMPP, you will need to make sure your server meets the following requirements:
+
 - PHP >= 5.6.4
 - OpenSSL PHP Extension
 - PDO PHP Extension
 - Mbstring PHP Extension
 - Tokenizer PHP Extension
 - XML PHP Extension
-</div>
 
 <a name="installing-laravel"></a>
 ### Installing Laravel
