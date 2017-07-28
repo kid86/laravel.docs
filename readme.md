@@ -7,30 +7,18 @@
 
 ## The Basics
 - [Routing](routing.md)
-- [Middleware](middleware.md)
-- [CSRF Protection](csrf.md)
 - [Controllers](controllers.md)
 - [Requests](requests.md)
 - [Responses](responses.md)
 - [Views](views.md)
 - [Session](session.md)
-- [Validation](validation.md)
-- [Errors & Logging](errors.md)
 
 
 ## Digging Deeper
-- [Artisan Console](artisan.md)
-- [Broadcasting](broadcasting.md)
 - [Cache](cache.md)
 - [Collections](collections.md)
-- [Events](events.md)
 - [File Storage](filesystem.md)
 - [Helpers](helpers.md)
-- [Mail](mail.md)
-- [Notifications](notifications.md)
-- [Package Development](packages.md)
-- [Queues](queues.md)
-- [Task Scheduling](scheduling.md)
 
 
 ## Database
@@ -39,7 +27,6 @@
 - [Pagination](pagination.md)
 - [Migrations](migrations.md)
 - [Seeding](seeding.md)
-- [Redis](redis.md)
 
 
 ## Eloquent ORM
