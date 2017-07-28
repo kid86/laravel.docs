@@ -5,8 +5,6 @@
     - [Retrieving Environment Configuration](#retrieving-environment-configuration)
     - [Determining The Current Environment](#determining-the-current-environment)
 - [Accessing Configuration Values](#accessing-configuration-values)
-- [Configuration Caching](#configuration-caching)
-- [Maintenance Mode](#maintenance-mode)
 
 <a name="introduction"></a>
 ## Introduction
@@ -64,39 +62,3 @@ You may easily access your configuration values using the global `config` helper
 To set configuration values at runtime, pass an array to the `config` helper:
 
     config(['app.timezone' => 'America/Chicago']);
-
-<a name="configuration-caching"></a>
-## Configuration Caching
-
-To give your application a speed boost, you should cache all of your configuration files into a single file using the `config:cache` Artisan command. This will combine all of the configuration options for your application into a single file which will be loaded quickly by the framework.
-
-You should typically run the `php artisan config:cache` command as part of your production deployment routine. The command should not be run during local development as configuration options will frequently need to be changed during the course of your application's development.
-
-> {note} If you execute the `config:cache` command during your deployment process, you should be sure that you are only calling the `env` function from within your configuration files.
-
-<a name="maintenance-mode"></a>
-## Maintenance Mode
-
-When your application is in maintenance mode, a custom view will be displayed for all requests into your application. This makes it easy to "disable" your application while it is updating or when you are performing maintenance. A maintenance mode check is included in the default middleware stack for your application. If the application is in maintenance mode, a `MaintenanceModeException` will be thrown with a status code of 503.
-
-To enable maintenance mode, simply execute the `down` Artisan command:
-
-    php artisan down
-
-You may also provide `message` and `retry` options to the `down` command. The `message` value may be used to display or log a custom message, while the `retry` value will be set as the `Retry-After` HTTP header's value:
-
-    php artisan down --message="Upgrading Database" --retry=60
-
-To disable maintenance mode, use the `up` command:
-
-    php artisan up
-
-> {tip} You may customize the default maintenance mode template by defining your own template at `resources/views/errors/503.blade.php`.
-
-#### Maintenance Mode & Queues
-
-While your application is in maintenance mode, no [queued jobs](/docs/{{version}}/queues) will be handled. The jobs will continue to be handled as normal once the application is out of maintenance mode.
-
-#### Alternatives To Maintenance Mode
-
-Since maintenance mode requires your application to have several seconds of downtime, consider alternatives like [Envoyer](https://envoyer.io) to accomplish zero-downtime deployment with Laravel.
