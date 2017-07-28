@@ -1,4 +1,8 @@
 # Laravel Documentation
+## Getting Started
+- [Installation](installation.md)
+- [Configuration](configuration.md)
+- [Directory Structure](structure.md)
 
 ## Contribution Guidelines
 
