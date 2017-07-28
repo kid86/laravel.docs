@@ -11,7 +11,7 @@
 
 <a name="server-requirements"></a>
 ### Server Requirements
-
+ 
 The Laravel framework has a few system requirements. Of course, all of these requirements are satisfied by the
 
 ### XAMPP Web Server
